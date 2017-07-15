@@ -36,11 +36,11 @@ host = 'mongodb://127.0.0.1:27017'
 This is hard coded into the script and will need to be changed for a remote host.
 
 Run from the terminal:
-$ python social_api.py 3 1.1 Morning
+$ python3 social_analyzer.py 3 1.1 Morning
 *argv[1] = number of tweets to pull in *argv[2] = sleep time between tweet pulls *argv[3:] = search hashtags or terms
 The command will connect 3 times to the Twitter API with 1.1 seconds of rest between connections to record Tweets about morning.
 
 Hashtags are searchable, but the # symbol must be escaped in the terminal:
-$ python sns_script.py 100 1.1 \#Morning
+$ python3 social_analyzer.py 3 1.1 \#Morning
 
 Tweets will be stored in the twitterdb database. The collection name will printed to the console.
